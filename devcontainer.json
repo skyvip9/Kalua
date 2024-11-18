@@ -1,0 +1,15 @@
+{
+  "name": "Ubuntu 22.04.2 LTS (Jammy) Development Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-python.python",
+    "esbenp.prettier-vscode"
+  ],
+  "postCreateCommand": "sudo apt-get install -y <your-additional-packages>"
+}
